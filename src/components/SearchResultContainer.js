@@ -11,7 +11,6 @@ export default function SearchResultContainer() {
         API.search()
             .then(res => {
                 setResults(res.data.results);
-                console.log(results)
             })
             .catch(err => console.log(err));
     }
@@ -20,8 +19,6 @@ export default function SearchResultContainer() {
     useEffect( () => {
         getEmployees();
     }, [])
-
-    console.log(results);
 
     return (
         <div>
