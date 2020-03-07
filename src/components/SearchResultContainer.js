@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import ResultList from "./ResultList";
 // import SearchForm from './SearchForm';
 import API from '../utils/API';
-
+//Something about header is breaking my code, ask about it tomorrow
+import Header from './header';
 export default function SearchResultContainer() {
 
     const [results, setResults] = useState('');
@@ -22,6 +23,8 @@ export default function SearchResultContainer() {
 
     return (
         <div>
+            
+            <Header />
             <ResultList data={results}/>
         </div>
     )

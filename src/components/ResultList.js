@@ -19,9 +19,6 @@ function ResultList(props) {
         )
     };
 
-    console.log(props.data[0]);
-    console.log(props.data[0].picture.thumbnail);
-    console.log(props.data[0].name.first)
     return (
         <Table>
             <thead>
