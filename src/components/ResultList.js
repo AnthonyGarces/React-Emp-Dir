@@ -20,7 +20,7 @@ function ResultList(props) {
     };
 
     return (
-        <Table>
+        <Table striped hover bordered>
             <thead>
                 <tr>
                     <th>Photo</th>
